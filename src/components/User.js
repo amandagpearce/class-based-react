@@ -2,6 +2,7 @@ import classes from './User.module.css';
 import { Component } from 'react';
 
 // functional component
+
 // const User = (props) => {
 //   return <li className={classes.user}>{props.name}</li>;
 // };
