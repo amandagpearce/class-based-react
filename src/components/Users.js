@@ -48,6 +48,14 @@ class Users extends Component {
     );
   };
 
+  // error boundaries
+  componentDidUpdate() {
+    if (this.props.users.length === 0) {
+      throw new Error('No users found!'); // will crash the app if not treated, an alternative would be to wrap it in a try catch 
+                                          // but if you want to handle the error in the parent component, then it wouldnt work because the error would be generated inside JSX and not regular JS
+    }
+  }
+
   render() {
     const usersList = ( // helper variables go inside the render method
       <ul>
