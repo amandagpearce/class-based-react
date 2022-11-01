@@ -1,4 +1,4 @@
-import { Fragment, Component, useState, useEffect } from 'react';
+import { Component } from 'react';
 import UsersContext from '../store/users-context';
 import ErrorBoundary from './ErrorBoundary';
 import classes from './UserFinder.module.css';
